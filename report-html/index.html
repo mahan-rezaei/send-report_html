@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="#">
+            <div class="n-e-ph">
+                <input type="text" name="title" placeholder="title" required>
+                <br>
+                <input type="text" name="fname" placeholder="name" required>
+                <br>
+                <input type="email" name="email" placeholder="email" required>
+                <br>
+                <input type="tel" name="phone_number" placeholder="phone-number(optional)">
+            </div>
+            <div class="subject_box">
+                <label for="subject" class="subject__lable"> subject :</label>
+                <select name="subject" id="subject">
+                    <option value="report"> report</option>
+                    <option value="Proposal">Proposal</option>
+                    <option value="Criticism">Criticism</option>
+                </select>
+                
+            </div>
+
+            <div class="gender">
+                
+                <input type="radio" id="gender" name="gender" value="male" required>
+                <label for="gender"> male</label>
+                
+                <input type="radio" id="gender2" name="gender" value="female" required>
+                <label for="gender2"> female</label>
+
+            </div>
+
+            <div class="text_area__box">
+                <label for="Description" class="text-area__lable">Description :</label>
+                <textarea name="Description" id="Description" cols="20" rows="10" required></textarea>
+               
+            </div>
+            
+                <input type="submit" value="submit Information">
+            
+        </form>
+    </div>
+   
+</body>
+</html>
